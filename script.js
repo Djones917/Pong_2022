@@ -1,6 +1,6 @@
 // Canvas
 const { body } = document;
-
+const canvas = document.createElement('canvas');
 
 const width = 500;
 const height = 700;
