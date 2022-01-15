@@ -221,8 +221,7 @@ function startGame() {
   ballReset();
   createCanvas();
   animate();
-  canvas.addEventListener('mousemove', (e) => {
-    console.log(e.clientX);
+  canvas.addEventListener('mousemove', (e) => {  
     playerMoved = true;
     // Compensate for canvas being centered
     paddleBottomX = e.clientX - canvasPosition - paddleDiff;
