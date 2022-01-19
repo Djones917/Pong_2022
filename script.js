@@ -191,12 +191,12 @@ function showGameOverEl(winner) {
 
 // Check If One Player Has Winning Score, If They Do, End Game
 function gameOver() {
-  // if (playerScore === winningScore || computerScore === winningScore) {
-  //   isGameOver = ;
-  //   // Set Winner
-  //   let winner = ;
-  //   showGameOverEl(winner);
-  // }
+  if (playerScore === winningScore || computerScore === winningScore) {
+    isGameOver = ;
+    // Set Winner
+    let winner = ;
+    showGameOverEl(winner);
+  }
 }
 
 // Called Every Frame
@@ -205,6 +205,7 @@ function animate() {
   ballMove();
   ballBoundaries();
   computerAI();
+  gameOver();
   window.requestAnimationFrame(animate);
 }
 
