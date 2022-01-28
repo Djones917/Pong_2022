@@ -185,7 +185,7 @@ function showGameOverEl(winner) {
   playAgainBtn.setAttribute('onclick', 'startGame()');
   playAgainBtn.textContent = 'Play Again';
   // Append
-
+  gameOverEl.append(title, playAgainBtn);
   
 }
 
