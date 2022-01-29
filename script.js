@@ -218,7 +218,7 @@ function startGame() {
     canvas.hidden = 'false';
   }
   isGameOver = false;
-  // isNewGame = ;
+  isNewGame = false;
   playerScore = 0;
   computerScore = 0;
   ballReset();
