@@ -215,7 +215,7 @@ function animate() {
 function startGame() {
   if (isGameOver && !isNewGame) {
     body.removeChild(gameOverEl);
-    canvas.hidden = 'false';
+    canvas.hidden = false;
   }
   isGameOver = false;
   isNewGame = false;
